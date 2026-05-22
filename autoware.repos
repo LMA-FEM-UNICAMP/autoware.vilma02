@@ -127,3 +127,30 @@ repositories:
     type: git
     url: https://github.com/autowarefoundation/autoware_individual_params.git
     version: 95019952513934a7653a2575c864ec4ace2f87b9
+
+  # FOR VILMA02
+
+  # xsens IMU GNSS/INS NTRIP driver
+  sensor_component/external/Xsens_MTi_ROS_Driver_and_Ntrip_Client:
+    type: git
+    url: https://github.com/LMA-FEM-UNICAMP/Xsens_MTi_ROS_Driver_and_Ntrip_Client.git
+    version: ros2
+  # ETSI V2X driver for Cohda
+  sensor_component/external/etsi_its_messages:
+    type: git
+    url: https://github.com/LMA-FEM-UNICAMP/etsi_its_messages
+    version: main
+  # sensor_kit
+  sensor_kit/vilma_sensor_kit_launch:
+    type: git
+    url: https://github.com/LMA-FEM-UNICAMP/vilma_sensor_kit_launch.git
+    version: main
+  # vehicle
+  vehicle/vilma_vehicle_launch:
+    type: git
+    url: https://github.com/LMA-FEM-UNICAMP/vilma_vehicle_launch
+    version: main
+  vehicle/external/vilma_interface:
+    type: git
+    url: https://github.com/LMA-FEM-UNICAMP/vilma_interface
+    version: udp
