@@ -103,10 +103,10 @@ repositories:
     type: git
     url: https://github.com/MapIV/transport_drivers.git
     version: e7e25ed52b58b3556fa8b0f75a87f7c5d42fbef1
-  sensor_kit/sample_sensor_kit_launch:
-    type: git
-    url: https://github.com/autowarefoundation/sample_sensor_kit_launch.git
-    version: a74a6cc737db54ee48810c6eb0fafffc84c343a4
+  # sensor_kit/sample_sensor_kit_launch:
+  #   type: git
+  #   url: https://github.com/autowarefoundation/sample_sensor_kit_launch.git
+  #   version: a74a6cc737db54ee48810c6eb0fafffc84c343a4
   sensor_kit/external/awsim_sensor_kit_launch:
     type: git
     url: https://github.com/RobotecAI/awsim_sensor_kit_launch.git
@@ -115,31 +115,32 @@ repositories:
     type: git
     url: https://github.com/autowarefoundation/awsim_labs_sensor_kit_launch.git
     version: 02a085987f144e7eac754ca50993d14fc98bef4d
-  vehicle/sample_vehicle_launch:
-    type: git
-    url: https://github.com/autowarefoundation/sample_vehicle_launch.git
-    version: 5469d845d068624c8e1d3a9d7874cbd004076ac7
-  vehicle/external/pacmod_interface:
-    type: git
-    url: https://github.com/tier4/pacmod_interface.git
-    version: 329ebfdd2e59ae68b0bb4d82c3733757443efc79
+  # vehicle/sample_vehicle_launch:
+  #   type: git
+  #   url: https://github.com/autowarefoundation/sample_vehicle_launch.git
+  #   version: 5469d845d068624c8e1d3a9d7874cbd004076ac7
+  # vehicle/external/pacmod_interface:
+  #   type: git
+  #   url: https://github.com/tier4/pacmod_interface.git
+  #   version: 329ebfdd2e59ae68b0bb4d82c3733757443efc79
   param/autoware_individual_params:
     type: git
     url: https://github.com/autowarefoundation/autoware_individual_params.git
     version: 95019952513934a7653a2575c864ec4ace2f87b9
 
-  # FOR VILMA02
+  # User added:
+  plugins/rviz/rviz_2d_plot_plugin:
+    type: git
+    url: https://github.com/amgaber95/rviz_2d_plot_plugin.git
+    version: 106722a4d37ae2a969231d67a746bdeb48c68f7f
+
+# FOR VILMA02
 
   # xsens IMU GNSS/INS NTRIP driver
   sensor_component/external/Xsens_MTi_ROS_Driver_and_Ntrip_Client:
     type: git
     url: https://github.com/LMA-FEM-UNICAMP/Xsens_MTi_ROS_Driver_and_Ntrip_Client.git
     version: autoware
-  # ETSI V2X driver for Cohda
-  sensor_component/external/etsi_its_messages:
-    type: git
-    url: https://github.com/LMA-FEM-UNICAMP/etsi_its_messages
-    version: main
   # sensor_kit
   sensor_kit/vilma_sensor_kit_launch:
     type: git
@@ -158,8 +159,15 @@ repositories:
     type: git
     url: https://github.com/LMA-FEM-UNICAMP/vilma_hmi
     version: main
-
-  plugins/rviz/rviz_2d_plot_plugin:
+  
+  # ETSI V2X driver for Cohda
+  v2x/drivers/etsi_its_messages:
     type: git
-    url: https://github.com/amgaber95/rviz_2d_plot_plugin.git
-    version: 106722a4d37ae2a969231d67a746bdeb48c68f7f
+    url: https://github.com/LMA-FEM-UNICAMP/etsi_its_messages
+    version: main
+
+  # V2X perception
+  v2x/perception/v2x_based_extended_perception:
+    type: git
+    url: https://github.com/LMA-FEM-UNICAMP/v2x_based_extended_perception
+    version: autoware.vilma02
